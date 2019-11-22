@@ -95,17 +95,19 @@ app.get('/obtenirCarta/:codiPartida', (req, res) => {
 
 app.get('/mostrarCartes/:codiPartida', (req, res) => {
   // TODO
-  // 
+  
 });
 
 app.put('/tirarCarta/codiPartida/carta', (req, res) => {
   // TODO
-  // què vol dir tirar una carta??
+  
 });
 
 app.put('/moureJugador/codiPartida/aposta/quantitat', (req, res) => {
   // TODO
-  
+  // guardar la quantitat que passen al body a primerJugaror/segonJugador.aposta
+  // req.body.quantitatApostada
+  // req.body.codiJugador
 });
 
 app.put('/moureJugador/codiPartida/passa', (req, res) => {
