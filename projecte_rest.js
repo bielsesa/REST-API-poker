@@ -15,51 +15,42 @@ let primerJugador = [];
 let segonJugador = [];*/
 
 let partida;
-let primerJugador = {cartes: []};
-let segonJugador = {cartes: []};
+let primerJugador = {cartes: [], aposta: 0};
+let segonJugador = {cartes: [], aposta: 0};
 
-app.post('/iniciarJoc/codiPartida', (req, res) => {
+app.post('/iniciarJoc/:codiPartida', (req, res) => {
   console.log('POST /iniciarJoc/codiPartida');
   partida = { codi: req.body.codi };
-  res.send(`Has entrat a la sala número ${req.body.codi}.`);
+  res.send(`Has entrat a la sala número ${req.query.codiPartida}.`);
 });
 
 app.get('/obtenirCarta/:codiPartida', (req, res) => {
-  // TODO
   // Reparteix les cartes a cada jugador.
   // Agafa les cartes d'un JSON.
 
-  /*
-    NO FUNCIONA
-    try {
-    var baralla = JSON.parse(cartesBaralla);
-
-    baralla.forEach(carta => {
-      console.log(`Carta: ${carta.baralla[0]}`);
-    });
-
-    //console.log(`Carta: ${carta.pal}, ${carta.color}, ${carta.carta}`);
-  } catch (err) {
-    console.log(`S'ha produït un error llegint el JSON de la baralla de cartes. 
-          \nError: ${err}`);
-  }*/
+  // comprova que la partida existeix
+  if (req.query.codiPartida != partida.codi) {
+    res.send(`Aquesta partida no existeix.`);
+  }
 
   // llegeix la baralla de cartes de l'arxiu JSON
   fs.readFile('./baralla.json', 'utf8', (err, barallaJSON) => {
     if (err) {
       console.log(`S'ha produït un error llegint el fitxer baralla.json del disc.
             \nError: ${err}`);
-      return;
+      res.send(`S'ha produït un error llegint el fitxer baralla.json del disc.`);
+      //return;
     }
     try {
       var data = JSON.parse(barallaJSON);
 
       // un cop s'ha llegit el JSON, reparteix les cartes a cada jugador
       let cartesRepartides = [];
+      let numCarta;
 
       // primer jugador
       while (primerJugador.cartes.length != 5) {
-        let numCarta = Math.floor(Math.random() * 52); // selecciona una carta al atzar, del 1 al 52
+        numCarta = Math.floor(Math.random() * 52); // selecciona una carta al atzar, del 1 al 52
 
         // comprova que la carta no estigui ja repartida
         if (!cartesRepartides.includes(numCarta)) {
@@ -77,7 +68,7 @@ app.get('/obtenirCarta/:codiPartida', (req, res) => {
 
       // segon jugador
       while (segonJugador.cartes.length != 5) {
-        let numCarta = Math.floor(Math.random() * 52); // selecciona una carta al atzar, del 1 al 52
+        numCarta = Math.floor(Math.random() * 52); // selecciona una carta al atzar, del 1 al 52
 
         // comprova que la carta no estigui ja repartida
         if (!cartesRepartides.includes(numCarta)) {
@@ -104,7 +95,7 @@ app.get('/obtenirCarta/:codiPartida', (req, res) => {
 
 app.get('/mostrarCartes/:codiPartida', (req, res) => {
   // TODO
-  //
+  // 
 });
 
 app.put('/tirarCarta/codiPartida/carta', (req, res) => {
@@ -114,6 +105,7 @@ app.put('/tirarCarta/codiPartida/carta', (req, res) => {
 
 app.put('/moureJugador/codiPartida/aposta/quantitat', (req, res) => {
   // TODO
+  
 });
 
 app.put('/moureJugador/codiPartida/passa', (req, res) => {
@@ -126,4 +118,4 @@ app.delete('/acabarJoc/:codi', (req, res) => {
   res.send('Partida acabada.');
 });
 
-app.listen(3001, () => console.log('inici servidor al port 3001'));
+app.listen(3000, () => console.log('inici servidor al port 3000'));
