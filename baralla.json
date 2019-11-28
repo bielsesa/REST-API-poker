@@ -1,313 +1,315 @@
-{"baralla": [
-  {
-    "pal": "piques",
-    "color": "negre",
-    "carta": "A"
-  },
+{
+  "baralla": [
+    {
+      "pal": "piques",
+      "color": "negre",
+      "carta": "A"
+    },
 
-  {
-    "pal": "piques",
-    "color": "negre",
-    "carta": "2"
-  },
+    {
+      "pal": "piques",
+      "color": "negre",
+      "carta": "2"
+    },
 
-  {
-    "pal": "piques",
-    "color": "negre",
-    "carta": "3"
-  },
+    {
+      "pal": "piques",
+      "color": "negre",
+      "carta": "3"
+    },
 
-  {
-    "pal": "piques",
-    "color": "negre",
-    "carta": "4"
-  },
+    {
+      "pal": "piques",
+      "color": "negre",
+      "carta": "4"
+    },
 
-  {
-    "pal": "piques",
-    "color": "negre",
-    "carta": "5"
-  },
+    {
+      "pal": "piques",
+      "color": "negre",
+      "carta": "5"
+    },
 
-  {
-    "pal": "piques",
-    "color": "negre",
-    "carta": "6"
-  },
+    {
+      "pal": "piques",
+      "color": "negre",
+      "carta": "6"
+    },
 
-  {
-    "pal": "piques",
-    "color": "negre",
-    "carta": "7"
-  },
+    {
+      "pal": "piques",
+      "color": "negre",
+      "carta": "7"
+    },
 
-  {
-    "pal": "piques",
-    "color": "negre",
-    "carta": "8"
-  },
+    {
+      "pal": "piques",
+      "color": "negre",
+      "carta": "8"
+    },
 
-  {
-    "pal": "piques",
-    "color": "negre",
-    "carta": "9"
-  },
+    {
+      "pal": "piques",
+      "color": "negre",
+      "carta": "9"
+    },
 
-  {
-    "pal": "piques",
-    "color": "negre",
-    "carta": "10"
-  },
+    {
+      "pal": "piques",
+      "color": "negre",
+      "carta": "10"
+    },
 
-  {
-    "pal": "piques",
-    "color": "negre",
-    "carta": "J"
-  },
+    {
+      "pal": "piques",
+      "color": "negre",
+      "carta": "J"
+    },
 
-  {
-    "pal": "piques",
-    "color": "negre",
-    "carta": "Q"
-  },
+    {
+      "pal": "piques",
+      "color": "negre",
+      "carta": "Q"
+    },
 
-  {
-    "pal": "piques",
-    "color": "negre",
-    "carta": "K"
-  },
+    {
+      "pal": "piques",
+      "color": "negre",
+      "carta": "K"
+    },
 
-  {
-    "pal": "trèvols",
-    "color": "negre",
-    "carta": "A"
-  },
+    {
+      "pal": "trèvols",
+      "color": "negre",
+      "carta": "A"
+    },
 
-  {
-    "pal": "trèvols",
-    "color": "negre",
-    "carta": "2"
-  },
+    {
+      "pal": "trèvols",
+      "color": "negre",
+      "carta": "2"
+    },
 
-  {
-    "pal": "trèvols",
-    "color": "negre",
-    "carta": "3"
-  },
+    {
+      "pal": "trèvols",
+      "color": "negre",
+      "carta": "3"
+    },
 
-  {
-    "pal": "trèvols",
-    "color": "negre",
-    "carta": "4"
-  },
+    {
+      "pal": "trèvols",
+      "color": "negre",
+      "carta": "4"
+    },
 
-  {
-    "pal": "trèvols",
-    "color": "negre",
-    "carta": "5"
-  },
+    {
+      "pal": "trèvols",
+      "color": "negre",
+      "carta": "5"
+    },
 
-  {
-    "pal": "trèvols",
-    "color": "negre",
-    "carta": "6"
-  },
+    {
+      "pal": "trèvols",
+      "color": "negre",
+      "carta": "6"
+    },
 
-  {
-    "pal": "trèvols",
-    "color": "negre",
-    "carta": "7"
-  },
+    {
+      "pal": "trèvols",
+      "color": "negre",
+      "carta": "7"
+    },
 
-  {
-    "pal": "trèvols",
-    "color": "negre",
-    "carta": "8"
-  },
+    {
+      "pal": "trèvols",
+      "color": "negre",
+      "carta": "8"
+    },
 
-  {
-    "pal": "trèvols",
-    "color": "negre",
-    "carta": "9"
-  },
+    {
+      "pal": "trèvols",
+      "color": "negre",
+      "carta": "9"
+    },
 
-  {
-    "pal": "trèvols",
-    "color": "negre",
-    "carta": "10"
-  },
+    {
+      "pal": "trèvols",
+      "color": "negre",
+      "carta": "10"
+    },
 
-  {
-    "pal": "trèvols",
-    "color": "negre",
-    "carta": "J"
-  },
+    {
+      "pal": "trèvols",
+      "color": "negre",
+      "carta": "J"
+    },
 
-  {
-    "pal": "trèvols",
-    "color": "negre",
-    "carta": "Q"
-  },
+    {
+      "pal": "trèvols",
+      "color": "negre",
+      "carta": "Q"
+    },
 
-  {
-    "pal": "trèvols",
-    "color": "negre",
-    "carta": "K"
-  },
+    {
+      "pal": "trèvols",
+      "color": "negre",
+      "carta": "K"
+    },
 
-  {
-    "pal": "cors",
-    "color": "vermell",
-    "carta": "A"
-  },
+    {
+      "pal": "cors",
+      "color": "vermell",
+      "carta": "A"
+    },
 
-  {
-    "pal": "cors",
-    "color": "vermell",
-    "carta": "2"
-  },
+    {
+      "pal": "cors",
+      "color": "vermell",
+      "carta": "2"
+    },
 
-  {
-    "pal": "cors",
-    "color": "vermell",
-    "carta": "3"
-  },
+    {
+      "pal": "cors",
+      "color": "vermell",
+      "carta": "3"
+    },
 
-  {
-    "pal": "cors",
-    "color": "vermell",
-    "carta": "4"
-  },
+    {
+      "pal": "cors",
+      "color": "vermell",
+      "carta": "4"
+    },
 
-  {
-    "pal": "cors",
-    "color": "vermell",
-    "carta": "5"
-  },
+    {
+      "pal": "cors",
+      "color": "vermell",
+      "carta": "5"
+    },
 
-  {
-    "pal": "cors",
-    "color": "vermell",
-    "carta": "6"
-  },
+    {
+      "pal": "cors",
+      "color": "vermell",
+      "carta": "6"
+    },
 
-  {
-    "pal": "cors",
-    "color": "vermell",
-    "carta": "7"
-  },
+    {
+      "pal": "cors",
+      "color": "vermell",
+      "carta": "7"
+    },
 
-  {
-    "pal": "cors",
-    "color": "vermell",
-    "carta": "8"
-  },
+    {
+      "pal": "cors",
+      "color": "vermell",
+      "carta": "8"
+    },
 
-  {
-    "pal": "cors",
-    "color": "vermell",
-    "carta": "9"
-  },
+    {
+      "pal": "cors",
+      "color": "vermell",
+      "carta": "9"
+    },
 
-  {
-    "pal": "cors",
-    "color": "vermell",
-    "carta": "10"
-  },
+    {
+      "pal": "cors",
+      "color": "vermell",
+      "carta": "10"
+    },
 
-  {
-    "pal": "cors",
-    "color": "vermell",
-    "carta": "J"
-  },
+    {
+      "pal": "cors",
+      "color": "vermell",
+      "carta": "J"
+    },
 
-  {
-    "pal": "cors",
-    "color": "vermell",
-    "carta": "Q"
-  },
+    {
+      "pal": "cors",
+      "color": "vermell",
+      "carta": "Q"
+    },
 
-  {
-    "pal": "cors",
-    "color": "vermell",
-    "carta": "K"
-  },
+    {
+      "pal": "cors",
+      "color": "vermell",
+      "carta": "K"
+    },
 
-  {
-    "pal": "diamants",
-    "color": "vermell",
-    "carta": "A"
-  },
+    {
+      "pal": "diamants",
+      "color": "vermell",
+      "carta": "A"
+    },
 
-  {
-    "pal": "diamants",
-    "color": "vermell",
-    "carta": "2"
-  },
+    {
+      "pal": "diamants",
+      "color": "vermell",
+      "carta": "2"
+    },
 
-  {
-    "pal": "diamants",
-    "color": "vermell",
-    "carta": "3"
-  },
+    {
+      "pal": "diamants",
+      "color": "vermell",
+      "carta": "3"
+    },
 
-  {
-    "pal": "diamants",
-    "color": "vermell",
-    "carta": "4"
-  },
+    {
+      "pal": "diamants",
+      "color": "vermell",
+      "carta": "4"
+    },
 
-  {
-    "pal": "diamants",
-    "color": "vermell",
-    "carta": "5"
-  },
+    {
+      "pal": "diamants",
+      "color": "vermell",
+      "carta": "5"
+    },
 
-  {
-    "pal": "diamants",
-    "color": "vermell",
-    "carta": "6"
-  },
+    {
+      "pal": "diamants",
+      "color": "vermell",
+      "carta": "6"
+    },
 
-  {
-    "pal": "diamants",
-    "color": "vermell",
-    "carta": "7"
-  },
+    {
+      "pal": "diamants",
+      "color": "vermell",
+      "carta": "7"
+    },
 
-  {
-    "pal": "diamants",
-    "color": "vermell",
-    "carta": "8"
-  },
+    {
+      "pal": "diamants",
+      "color": "vermell",
+      "carta": "8"
+    },
 
-  {
-    "pal": "diamants",
-    "color": "vermell",
-    "carta": "9"
-  },
+    {
+      "pal": "diamants",
+      "color": "vermell",
+      "carta": "9"
+    },
 
-  {
-    "pal": "diamants",
-    "color": "vermell",
-    "carta": "10"
-  },
+    {
+      "pal": "diamants",
+      "color": "vermell",
+      "carta": "10"
+    },
 
-  {
-    "pal": "diamants",
-    "color": "vermell",
-    "carta": "J"
-  },
+    {
+      "pal": "diamants",
+      "color": "vermell",
+      "carta": "J"
+    },
 
-  {
-    "pal": "diamants",
-    "color": "vermell",
-    "carta": "Q"
-  },
+    {
+      "pal": "diamants",
+      "color": "vermell",
+      "carta": "Q"
+    },
 
-  {
-    "pal": "diamants",
-    "color": "vermell",
-    "carta": "K"
-  }
-]}
+    {
+      "pal": "diamants",
+      "color": "vermell",
+      "carta": "K"
+    }
+  ]
+}
