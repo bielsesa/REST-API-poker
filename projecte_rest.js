@@ -2,8 +2,6 @@ const express = require('express');
 const app = express();
 const fs = require('fs');
 
-//const cartesBaralla = require('./baralla.json');
-
 var bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
@@ -108,7 +106,7 @@ app.get('/mostrarCartes/:codiPartida', (req, res) => {
 });
 
 app.put('/tirarCarta/codiPartida/carta', (req, res) => {
-  
+
 });
 
 app.put('/moureJugador/codiPartida/aposta/quantitat', (req, res) => {
@@ -116,11 +114,31 @@ app.put('/moureJugador/codiPartida/aposta/quantitat', (req, res) => {
   // guardar la quantitat que passen al body a primerJugaror/segonJugador.aposta
   // req.body.quantitatApostada
   // req.body.codiJugador
-  
+
+  if (req.body.codiPartida != partida.codi) {
+    res.send(`Aquesta partida no existeix.`);
+  }
+
+  if (req.body.codiJugador == 0){
+    primerJugador.aposta = req.body.quantitatAposta ;
+    res.send(`El primer jugador ha apostat:  ${primerJugador.aposta}`);
+
+  } else if (req.body.codiJugador == 1) {
+    segonJugador.aposta = req.body.quantitatAposta ;
+    res.send(`El primer jugador ha apostat:  ${segonJugador.aposta}`);
+  }
+
 });
 
 app.put('/moureJugador/codiPartida/passa', (req, res) => {
   // TODO
+  if (req.body.codiJugador == 0){
+    res.send(`El primer jugador passa.`);
+    
+  } else if (req.body.codiJugador == 1) {
+    res.send(`El segon jugador passa.`);
+  }
+
 });
 
 app.delete('/acabarJoc/:codi', (req, res) => {
