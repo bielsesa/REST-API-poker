@@ -14,14 +14,15 @@ let cartesPartida = [];
 let primerJugador = [];
 let segonJugador = [];*/
 
-let partida;
+let partida = { 'codi': -1 };
 let primerJugador = {cartes: [], aposta: 0};
 let segonJugador = {cartes: [], aposta: 0};
 
 app.post('/iniciarJoc/:codiPartida', (req, res) => {
   console.log('POST /iniciarJoc/codiPartida');
-  partida = { codi: req.body.codi };
-  res.send(`Has entrat a la sala número ${req.query.codiPartida}.`);
+  partida.codi = req.body.codiPartida;
+  console.log(`Creada partida amb codi: ${partida.codi}`);
+  res.send(`Has entrat a la sala número ${partida.codi}.`);
 });
 
 app.get('/obtenirCarta/:codiPartida', (req, res) => {
@@ -29,8 +30,10 @@ app.get('/obtenirCarta/:codiPartida', (req, res) => {
   // Agafa les cartes d'un JSON.
 
   // comprova que la partida existeix
-  if (req.query.codiPartida != partida.codi) {
+  if (req.params.codiPartida != partida.codi) {
+    console.log(`Params codipartida: ${req.params.codiPartida} , Server codiPartida: ${partida.codi}`);
     res.send(`Aquesta partida no existeix.`);
+    return;
   }
 
   // llegeix la baralla de cartes de l'arxiu JSON
@@ -39,7 +42,6 @@ app.get('/obtenirCarta/:codiPartida', (req, res) => {
       console.log(`S'ha produït un error llegint el fitxer baralla.json del disc.
             \nError: ${err}`);
       res.send(`S'ha produït un error llegint el fitxer baralla.json del disc.`);
-      //return;
     }
     try {
       var data = JSON.parse(barallaJSON);
@@ -87,6 +89,7 @@ app.get('/obtenirCarta/:codiPartida', (req, res) => {
     } catch (err) {
       console.log(`S'ha produït un error llegint el JSON de la baralla de cartes. 
             \nError: ${err}`);
+      res.send('');
     }
   });
 
@@ -94,12 +97,17 @@ app.get('/obtenirCarta/:codiPartida', (req, res) => {
 });
 
 app.get('/mostrarCartes/:codiPartida', (req, res) => {
-  // TODO
+  if (req.params.codiPartida != partida.codi) {
+    res.send('No existeix cap partida amb aquest codi!');
+  }
   
+  res.send(`Cartes primer jugador: 
+            ${JSON.stringify(primerJugador.cartes)} 
+            Cartes segon jugador: 
+            ${JSON.stringify(segonJugador.cartes)}`);
 });
 
 app.put('/tirarCarta/codiPartida/carta', (req, res) => {
-  // TODO
   
 });
 
@@ -108,6 +116,7 @@ app.put('/moureJugador/codiPartida/aposta/quantitat', (req, res) => {
   // guardar la quantitat que passen al body a primerJugaror/segonJugador.aposta
   // req.body.quantitatApostada
   // req.body.codiJugador
+  
 });
 
 app.put('/moureJugador/codiPartida/passa', (req, res) => {
