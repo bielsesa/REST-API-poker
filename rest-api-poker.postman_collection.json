@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "f2d7c14c-5cb9-4509-a702-a6cf0c6b350b",
+		"name": "REST API poker collection - Biel Serrano Sanchez",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14717882"
+	},
+	"item": [
+		{
+			"name": "REST API poker (Node.js + Express.js)",
+			"item": [
+				{
+					"name": "Iniciar Joc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codiPartida\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/iniciarJoc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"iniciarJoc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtenir carta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/obtenirCarta/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"obtenirCarta",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar cartes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/mostrarCartes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"mostrarCartes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tirar carta",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codiPartida\": 1,\r\n    \"codiJugador\":0,\r\n    \"carta\" : {\r\n        \"pal\":\"piques\",\r\n        \"color\":\"negre\",\r\n        \"carta\":2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tirarCarta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tirarCarta"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Apostar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codiPartida\": 1,\r\n    \"codiJugador\":1,\r\n    \"quantitatAposta\" : 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/apostar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"apostar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Passar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codiPartida\": 1,\r\n    \"codiJugador\":0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/passar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"passar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Acabar joc",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/acabarJoc/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"acabarJoc",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
