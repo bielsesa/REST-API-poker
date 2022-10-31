@@ -133,7 +133,7 @@ app.get("/mostrarCartes/:codiPartida", (req, res) => {
 });
 
 /*************** EL JUGADOR LLENÇA UNA CARTA ***************/
-app.put("/tirarCarta/codiPartida/carta", (req, res) => {
+app.put("/tirarCarta", (req, res) => {
   let partidaInput = { codiPartida: req.body.codiPartida };
 
   let trobaPartida = p => {
@@ -195,7 +195,7 @@ app.put("/tirarCarta/codiPartida/carta", (req, res) => {
 });
 
 /*************** EL JUGADOR APOSTA UNA QUANTITAT ***************/
-app.put("/moureJugador/codiPartida/aposta/quantitat", (req, res) => {
+app.put("/apostar", (req, res) => {
   let partidaInput = { codiPartida: req.body.codiPartida };
 
   let trobaPartida = p => {
@@ -228,7 +228,7 @@ app.put("/moureJugador/codiPartida/aposta/quantitat", (req, res) => {
 });
 
 /*************** EL JUGADOR PASSA ***************/
-app.put("/moureJugador/codiPartida/passa", (req, res) => {
+app.put("/passar", (req, res) => {
   let partidaInput = { codiPartida: req.body.codiPartida };
 
   let trobaPartida = p => {
@@ -267,7 +267,7 @@ app.delete("/acabarJoc/:codiPartida", (req, res) => {
     res.send(`Aquesta partida no existeix.`);
   } else {
     partides.splice(partides.indexOf(partida), 1);
-    res.send(`S'ha acabat la partida de la sala número ${partida.codiPartida}.`);
+    res.send(`S'ha acabat la partida de la sala número ${partidaInput.codiPartida}.`);
   }
 });
 
