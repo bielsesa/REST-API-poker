@@ -77,7 +77,7 @@ Body structure:
 }
 ```
 
-### Pass turn
+### Pass a turn
 
 Route: `/passar`
 
