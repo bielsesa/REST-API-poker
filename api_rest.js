@@ -15,7 +15,7 @@ let primerJugador = { cartes: [], aposta: 0 };
 let segonJugador = { cartes: [], aposta: 0 };
 
 /*************** S'INICIA LA PARTIDA ***************/
-app.post("/iniciarJoc/:codiPartida", (req, res) => {
+app.post("/iniciarJoc", (req, res) => {
   console.log("POST /iniciarJoc/codiPartida");
 
   partides.push({
